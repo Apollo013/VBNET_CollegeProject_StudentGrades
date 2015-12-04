@@ -1,0 +1,1209 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+StudentClient
+</name>
+</assembly>
+<members>
+<member name="P:DAL.adprStudent.parmID">
+ <summary>
+ Students ID Parameter
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Student ID.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.parmFirstName">
+ <summary>
+ Students First Name Parameter
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Students First Name.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.parmLastName">
+ <summary>
+ Students Last Name Parameter.
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Students Last Name.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.parmPhoneNumber">
+ <summary>
+ Students Phone Number Parameter.
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Students Phone Number.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.parmAddress">
+ <summary>
+ Students Address Parameter.
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Students Address.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.parmEmail">
+ <summary>
+ Students Email Parameter.
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Students Email.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.parmChristmas">
+ <summary>
+ Students Christmas Mark Parameter.
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Students Christmas Mark.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.parmSummer">
+ <summary>
+ Students Summer Mark Parameter.
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Students Summer Mark.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.parmClass">
+ <summary>
+ Students Class Parameter.
+ </summary>
+ <value></value>
+ <returns>An OLEDBParameter for Students Class.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.StudentAdapter">
+ <summary>
+ Students Data Adapter
+ </summary>
+ <value></value>
+ <returns>An OleDbDataAdapter Object</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.StudentConnection">
+ <summary>
+ Connection Object For Connecting To The Students Database.
+ </summary>
+ <value></value>
+ <returns>An OleDbConnection Object</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.StudentDataTable">
+ <summary>
+ Gets or Sets A Reference To The Student Data Table.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.CurrentSearchValue">
+ <summary>
+ Gets or Sets The Search Criteria Used For Filtering Student Records.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.adprStudent.CurrentSearchOption">
+ <summary>
+ Gets or Sets The Current Search Option.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.#ctor(DAL.dtStudent@)">
+ <summary>
+ Class Constructor.
+ </summary>
+ <param name="dataTable">A Reference To The Student Data Table</param>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.Init">
+ <summary>
+ Initialies The Data Adapter Commands.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandUpdate">
+ <summary>
+ Creates A New Update Command.
+ </summary>
+ <returns>An OleDbCommand Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandInsert">
+ <summary>
+ Creates A New Insert Command.
+ </summary>
+ <returns>An OleDbCommand Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandDelete">
+ <summary>
+ Creates A New Delete Command.
+ </summary>
+ <returns>An OleDbCommand Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandFillAll">
+ <summary>
+ Creates A Command For Retrieving 'ALL' Records From The StudentRecord Table.
+ </summary>
+ <returns>An OleDbCommand Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandName">
+ <summary>
+ Creates A Command For Filtering Students By Name.
+ </summary>
+ <returns>An OleDbCommand Object.</returns>
+ <remarks>Filters Both The First Name And The Last Name</remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandAddress">
+ <summary>
+ Creates A Command For Filtering Students By Address.
+ </summary>
+ <returns>An OleDbCommand Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandClass">
+ <summary>
+ Creates A Command For Filtering Students By Class.
+ </summary>
+ <returns>An OleDbCommand Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandDistinctClassess">
+ <summary>
+ Creates A Command For Retrieving Distinct Classes.
+ </summary>
+ <returns>An OleDBCommand Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.CommandDistinctAddresses">
+ <summary>
+ Creates A Command For Retrieving Distinct Addresses.
+ </summary>
+ <returns>An OleDBCommand Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.SetCommand">
+ <summary>
+ Assigns The Appropriate 'SELECT' Command.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.UpdateAll">
+ <summary>
+ Updates All Changes Made To The Student DataTable Object
+ </summary>
+ <returns>True if Successfull, Otherwise False</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.Fill">
+ <summary>
+  Calls The Approriate 'Fill' Method.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.FillStudents">
+ <summary>
+ Fills The Student Data Table According To The Specified Search Criteria.
+ </summary>
+ <returns>A 32-bit Integer Value Representing The Row Count In The Data Table.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.FillStudentsByGrade">
+ <summary>
+ Fills The Student Data Table By Grade.
+ </summary>
+ <returns>A 32-bit Integer Value Representing The Row Count In The Data Table.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.AssignGrades(DAL.dtStudent@)">
+ <summary>
+ Assigns the Grade For Each Student.
+ </summary>
+ <param name="dataTable">Student Data Table</param>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.GetDistinctClasses">
+ <summary>
+ Retrieves A Table Of Distinct Classes.
+ </summary>
+ <returns>A Table Of Distinct Student Classes.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.adprStudent.GetDistinctAddresses">
+ <summary>
+ Retrieves A Table Of Distinct Addresses.
+ </summary>
+ <returns>A Table Of Distinct Student Addresses.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtDistinctAddress.AddressColumn">
+ <summary>
+ Students Address Data Column.
+ </summary>
+ <value></value>
+ <returns>A 'String' DataColumn Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.dtDistinctAddress.#ctor">
+ <summary>
+ 'dtDistinctAddress' Class Constructor.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtDistinctClass.ClassColumn">
+ <summary>
+ Students Class name.
+ </summary>
+ <value></value>
+ <returns>A 'String' DataColumn Object.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.dtDistinctClass.#ctor">
+ <summary>
+ 'dtDistinctClass' Class Constructor.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.IDColumn">
+ <summary>
+ Student ID.
+ </summary>
+ <value></value>
+ <returns>A data column representing the ID column in our database.</returns>
+ <remarks>This is also our Primary Key.</remarks>
+</member>
+<member name="P:DAL.dtStudent.FirstNameColumn">
+ <summary>
+ Students first name.
+ </summary>
+ <value></value>
+ <returns>A data column representing the First name column in our database.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.LastNameColumn">
+ <summary>
+ Students last name.
+ </summary>
+ <value></value>
+ <returns>A data column representing the Last Name column in our database.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.PhoneNumberColumn">
+ <summary>
+ Students Phone Number.
+ </summary>
+ <value></value>
+ <returns>A data column representing the Phone Number column in our database.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.AddressColumn">
+ <summary>
+ Students Address.
+ </summary>
+ <value></value>
+ <returns>A data column representing the Address column in our database.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.EmailColumn">
+ <summary>
+ Students Email Address.
+ </summary>
+ <value></value>
+ <returns>A data column representing the Email column in our database.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.ChristmasColumn">
+ <summary>
+ Students mark for Christmas exam.
+ </summary>
+ <value></value>
+ <returns>A data column representing the Christmas column in our database.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.SummerColumn">
+ <summary>
+ Students mark for Summer exam.
+ </summary>
+ <value></value>
+ <returns>A data column representing the Summer column in our database.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.ClassColumn">
+ <summary>
+ Students Class name.
+ </summary>
+ <value></value>
+ <returns>A data column representing the Class column in our database.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.OverallTotal">
+ <summary>
+ Overall student mark (weighted)
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dtStudent.Grade">
+ <summary>
+ Overall Student Grade For The Year.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.dtStudent.#ctor">
+ <summary>
+ Table Constructor.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.dtStudent.InitControls">
+ <summary>
+ Initialises and Adds Data Columns To The Table.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.dtStudent.Calculate(System.Object,System.Data.DataColumnChangeEventArgs)">
+ <summary>
+ Calculates The Grade For Each Student.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.dtStudent.Validate(System.Object,System.Data.DataColumnChangeEventArgs)">
+ <summary>
+ Validation.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="E:DAL.dtStudent.TableChangedEvent">
+ <summary>
+ Custom Event To Be Raised Whenever The Student Table Changes.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:DAL.dtStudent.StudentTableChanged(SearchOptions)">
+ <summary>
+ Raises TableChangedEvent.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.dsStudent.StudentTable">
+ <summary>
+ Gets A 'dtStudent' DataTable Object.
+ </summary>
+</member>
+<member name="M:DAL.dsStudent.#ctor">
+ <summary>
+ 'dsStudent' Class Constructor.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.TableName">
+ <summary>
+ Gets The Name Of The Student Database Data Table.
+ </summary>
+ <value></value>
+ <returns>'StudentRecord'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.ID">
+ <summary>
+ Gets The Name Of The Student ID Column Name.
+ </summary>
+ <value></value>
+ <returns>'ID'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.FirstName">
+ <summary>
+ Gets The Name Of The Student First Name Column Name.
+ </summary>
+ <value></value>
+ <returns>'First name'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.LastName">
+ <summary>
+ Gets The Name Of The Student Last Name Column Name.
+ </summary>
+ <value></value>
+ <returns>Last Name</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.PhoneNumber">
+ <summary>
+ Gets The Name Of The Student Phone Number Column Name.
+ </summary>
+ <value></value>
+ <returns>'phoneNumber'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.Address">
+ <summary>
+ Gets The Name Of The Student Address Column Name.
+ </summary>
+ <value></value>
+ <returns>'Address'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.Email">
+ <summary>
+ Gets The Name Of The Student Email Column Name.
+ </summary>
+ <value></value>
+ <returns>'Email'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.Christmas">
+ <summary>
+ Gets The Name Of The Student Christmas Column Name.
+ </summary>
+ <value></value>
+ <returns>'Christmas'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.Summer">
+ <summary>
+ Gets The Name Of The Student Summer Column Name.
+ </summary>
+ <value></value>
+ <returns>'Summer'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.ClassName">
+ <summary>
+ Gets The Name Of The Student Class Column Name.
+ </summary>
+ <value></value>
+ <returns>'Class'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.OverallTotal">
+ <summary>
+ This Is A Custom Column Not Part Of The StudentRecord Database Table.
+ </summary>
+ <value></value>
+ <returns>'OverallTotal'</returns>
+ <remarks></remarks>
+</member>
+<member name="P:DAL.StudentDataNames.Grade">
+ <summary>
+ This Is A Custom Column Not Part Of The StudentRecord Database Table.
+ </summary>
+ <value></value>
+ <returns>'Grade'</returns>
+ <remarks></remarks>
+</member>
+<member name="F:Views.frmStudent.studentHeader">
+ <summary>
+ Header Displaying Ofiaich Name And Crest.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Views.frmStudent.studentToolbar">
+ <summary>
+ Toolstrip That Contains The Update and Search Controls.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Views.frmStudent.studentDataGrid">
+ <summary>
+ DataGridView Used To Display Student Records.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Views.frmStudent.studentTotals">
+ <summary>
+ Panel Used To Display Totals And Averages.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Views.frmStudent.studentDataSet">
+ <summary>
+ Gets A StudentDataSet Object.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Views.frmStudent.studentBindingSource">
+ <summary>
+ Gets A New Binding Source For Binding The Student DataSet To The DataGrid.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Views.frmStudent.studentDataAdapter">
+ <summary>
+ Gets A Data Adapter Object For Retrieving and Updating Student Records.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Views.frmStudent.#ctor">
+ <summary>
+ Constructor For The 'Main' Student Form.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Views.frmStudent.Init">
+ <summary>
+ Initialises This Component.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Views.frmStudent.InitControls">
+ <summary>
+ Initialises Child Controls And Adds Them To The UI.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Views.frmStudent.ClosingForm(System.Object,System.Windows.Forms.FormClosingEventArgs)">
+ <summary>
+ Checks If There Any Changes That Need Saving Before Exiting The Application.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks></remarks>
+</member>
+<member name="P:Grades.Fail">
+ <summary>
+ 'Fail' Grade Value
+ </summary>
+ <value></value>
+ <returns>String - "Fail"</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Grades.Pass">
+ <summary>
+ 'Pass' Grade Value
+ </summary>
+ <value></value>
+ <returns>String - "Pass"</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Grades.Merit">
+ <summary>
+ 'Merit' Grade Value
+ </summary>
+ <value></value>
+ <returns>String - "Merit"</returns>
+ <remarks></remarks>
+</member>
+<member name="P:Grades.Distinction">
+ <summary>
+ 'Distinction' Grade Value
+ </summary>
+ <value></value>
+ <returns>String - "Distinction"</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Grades.GetGrade(System.Double)">
+ <summary>
+ Determines The Grade Value For Exam Mark.
+ </summary>
+ <returns>Either 'Fail', 'Pass', Merit' or 'Distinction'.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Grades.ToArray">
+ <summary>
+ Gets A String Array Of Grade Names
+ </summary>
+ <returns>An Array(Of String) Containing Grade Names</returns>
+ <remarks></remarks>
+</member>
+<member name="M:Grades.ToPlural(System.String)">
+ <summary>
+ Converts A Singular Grade To Its Plural Equivalent.
+ </summary>
+ <returns>A String Containing The Pluralised Version Of A Grade.</returns>
+ <remarks></remarks>
+</member>
+<member name="T:SearchOptions">
+ <summary>
+ Limited List Of Search Options.
+ </summary>
+ <remarks>Relates To The Selected Index Value Of The Search Options ComboBox Located In The 'ucStudentToolbar' Component.</remarks>
+</member>
+<member name="T:My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcID">
+ <summary>
+ Gets A Datagrid Column For Students ID.
+ </summary>
+ <value></value>
+ <returns>A New Readonly TextBox Column For Students ID.</returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcFirstName">
+ <summary>
+ Gets A Datagrid Column For Students First Name.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students First Name.</returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcLastName">
+ <summary>
+ Gets A Datagrid Column For Students Last Name.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Last Name.</returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcAddress">
+ <summary>
+ Gets A Datagrid Column For Students Address.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Address.</returns>
+ <remarks></remarks>        
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcPhone">
+ <summary>
+ Gets A Datagrid Column For Students Phone Number.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Phone Number.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcEmail">
+ <summary>
+ Gets A Datagrid Column For Students Email.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Email.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcClass">
+ <summary>
+ Gets A Datagrid Column For Students Class.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Class.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcChristmasMark">
+ <summary>
+ Gets A Datagrid Column For Students Christmas Mark.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Christmas Mark.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcSummerMark">
+ <summary>
+ Gets A Datagrid Column For Students Summer Mark.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Summer Mark.</returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcOverallMark">
+ <summary>
+ Gets A Datagrid Column For Students Overall Mark.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Overall Mark.</returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="P:UserControls.ucStudentDataGrid.dgcGrade">
+ <summary>
+ Gets A Datagrid Column For Students Grade.
+ </summary>
+ <value></value>
+ <returns>A New TextBox Column For Students Grade.</returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentDataGrid.#ctor(System.Windows.Forms.BindingSource@)">
+ <summary>
+ 'ucStudentDataGrid' Class Constructor.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentDataGrid.Init">
+ <summary>
+ Initialises The DataGrid Component.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentDataGrid.InitControls">
+ <summary>
+ Initialises And Adds Data Columns Plus Formats Cells.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentTotals.Spacer">
+ <summary>
+ Gets A Blank Label To Act As A Spacer Between The Diferent Average Headers.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentTotals.GroupHeader">
+ <summary>
+ Gets A TextBox With Text That Describes The Type Of Averages Being Displayed.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentTotals.DetailHeader">
+ <summary>
+ Gets A TextBox With Text That Desribes The Value Being Displayed.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentTotals.DetailValue">
+ <summary>
+ Gets A TextBox Used For Displaying A Total or Average Calculation.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:UserControls.ucStudentTotals.__studentDataTable">
+ <summary>
+ Reference To The Student Data Table.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentTotals.Count">
+ <summary>
+ Gets The Numbers Of Rows In The Student Data Table.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.#ctor(DAL.dtStudent@)">
+ <summary>
+ 'ucStudentTotals' Class Constructor.
+ </summary>
+ <param name="dataTable"></param>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.Init">
+ <summary>
+ Initialises This Component.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.InitControls(SearchOptions)">
+ <summary>
+ Calls The Appropriate Calculation Methods.
+ </summary>
+ <param name="SearchOption">Determines What Totals And Averages Are To Be Displayed.</param>
+ <remarks>This Is The Event Handler For The 'TableChangedEvent' In The Student Data Table.</remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.CalculateOverAll">
+ <summary>
+ Calculates Overall Totals and Averages.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.CalculateGrades">
+ <summary>
+ Calculates Grade Percentages.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.GradePercentage(System.String)">
+ <summary>
+ Calculates How Many Students Fall Under A Particular Grade.
+ </summary>
+ <param name="gradename"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.CalculateClasses">
+ <summary>
+ Calculates Average Marks For Each Class.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.AddHeader(System.String)">
+ <summary>
+ Adds A TextBox Header Describing The Group Of Totals and Averages Being Displayed.
+ </summary>
+ <param name="parmHeaderText">A String Value Describing The Group Of Totals and Averages Being Displayed.</param>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.AddDetail(System.String,System.Double)">
+ <summary>
+ Adds A Detail That Displays Values As A Percentage.
+ </summary>
+ <param name="parmDetailName">A String Value That Desribes The Percentage Value Being Displayed.</param>
+ <param name="parmDetailValue">A Double Value Containing The Percentage Value To Display.</param>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentTotals.AddDetail(System.String,System.Int32)">
+ <summary>
+ Adds A Detail That Displays Values As A Number.
+ </summary>
+ <param name="parmDetailName">A String Value That Desribes The Percentage Value Being Displayed.</param>
+ <param name="parmDetailValue">An Integer Value Containing The 'Total' Value To Display.</param>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.tplButton.ToolTip">
+ <summary>
+ Sets or Gets The Button Tooltip.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.tplButton.#ctor">
+ <summary>
+ 'tplButton' Class Constructor.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:UserControls.DividerType">
+ <summary>
+ Options For The Type Of Divider To Create.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.tplDivider.#ctor(UserControls.DividerType)">
+ <summary>
+ 'tplDivider' Class Constructor.
+ </summary>
+ <param name="_DividerType"></param>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.tplDivider.Create_HorizontalPanelDivider">
+ <summary>
+ Creates A Divider That Stretches Across The Form Horizontally.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.tplDivider.Create_VerticalButtonDivider">
+ <summary>
+ Creates A Vertical Divider That Sperates Button Controls.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentHeader.OfiaichBanner">
+ <summary>
+ Gets A Picture Box With The Ofiaich Logo.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentHeader.OfiaichCrest">
+ <summary>
+ Gets A Picture Box With The Ofiaich Crest.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentHeader.#ctor">
+ <summary>
+ Constructor
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentHeader.Init">
+ <summary>
+ Initialise This Component.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentHeader.InitControls">
+ <summary>
+ Initialises And Adds Child Controls To The UI.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:UserControls.ucStudentToolbar.studentDataSet">
+ <summary>
+ A Reference To The Student Data Set That Caches The Student Data Table.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:UserControls.ucStudentToolbar.studentBindingSource">
+ <summary>
+ A Reference To The Binding Source Object That Is Bound To The Student Data Grid.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:UserControls.ucStudentToolbar.studentDataAdapter">
+ <summary>
+ A Reference To The Student Data Adapter Responsible For Updates And Table Population.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:UserControls.ucStudentToolbar._studentDataGrid">
+ <summary>
+ A Reference To The DataGridView Used To Display Student Records.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.#ctor(DAL.dsStudent@,System.Windows.Forms.BindingSource@,DAL.adprStudent@,UserControls.ucStudentDataGrid@)">
+ <summary>
+ Toolbar Constructor
+ </summary>
+ <param name="parmStudentDataSet">A Reference To The Student Data Set Object (dsStudent).</param>
+ <param name="parmStudentBindingSource">A Reference To A Binding Source Object (BindingSource).</param>
+ <param name="parmStudentDataAdapter">A Reference To The Student Data Adapter Object (adprStudent).</param>
+ <param name="parmStudentDataGrid">A Reference To The Student Data Grid Object (ucStudentDataGrid).</param>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.Init">
+ <summary>
+ Initialises The Toolbar Component.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.InitControls">
+ <summary>
+ Initialises Child Controls And Adds Them To The Toolbar.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnAdd">
+ <summary>
+ Gets A Button Control For Creating A New Student Record.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.Add">
+ <summary>
+ Adds A New Student Record And Begins Edit. 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnDelete">
+ <summary>
+ Gets A Button Control For Deleting A Data Grid Row.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.Delete">
+ <summary>
+ Deletes A Student Row From The Data Grid View. 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnSave">
+ <summary>
+ Gets A Button Control For Persisting Changes To The Students Database.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.Save">
+ <summary>
+ Persists Changes To The Students Database. 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnMoveFirst">
+ <summary>
+ Gets A Button Control For Moving To The First Record.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.MoveFirst">
+ <summary>
+ Moves To The First Row In A DataGrid.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnMovePrevious">
+ <summary>
+ Gets A Button Control For Moving To The Previous Record.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.MovePrevious">
+ <summary>
+ Moves To The Previous Row In A DataGrid.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnMoveNext">
+ <summary>
+ Gets A Button Control For Moving To The Next Record.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.MoveNext">
+ <summary>
+ Moves To The Next Row In A DataGrid.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnMoveLast">
+ <summary>
+ Gets A Button Control For Moving To Last Record.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.MoveLast">
+ <summary>
+ Moves To The Next Row In A DataGrid.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.SearchValue">
+ <summary>
+ Gets or Sets The Search Criteria Used For Filtering Student Records.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.CurrentSearchOption">
+ <summary>
+ Gets or Sets The Current Search Option.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.cboSearchOption">
+ <summary>
+ Gets A ComboBox Control That Allows A User To Choose What To Search For.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.SearchOptionChanged">
+ <summary>
+ 'SelectedIndexChanged' Event Handler For '_cboSearchOption'. 
+ </summary>
+ <remarks>Changes The 'SELECT' Command and Displays The Appropriate Search Controls.</remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.DisplaySearchValueControl">
+ <summary>
+ Displays The Appropriate Search Controls.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.cboSearchValue">
+ <summary>
+ Gets A ComboBox Used For Searching Students By Address, Class or Grade.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.ComboSearchValueChanged">
+ <summary>
+ Initiates A Search For Students Either By Address, Class or Grade.
+ </summary>
+ <remarks>'SelectionChangeCommitted' Event Handler For '_cboSearchValue'</remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.txtSearchValue">
+ <summary>
+ Gets A TextBox Control Used For Searching Student Records By Name.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.TextBoxSearchValueChanged(System.Object,System.Windows.Forms.KeyEventArgs)">
+ <summary>
+ Initiates A Search For Students By Name.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>'KeyDown' Event Handler For _txtSearchValue.</remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnSearch">
+ <summary>
+ Gets A Button Control Used For Searching Student Records By Name.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.Search(System.Object,System.EventArgs)">
+ <summary>
+ Initiates A Search For A Student By Name.
+ </summary>
+ <param name="sender"></param>
+ <param name="e"></param>
+ <remarks>'Click' Event Handler For '_btnNameSearch'.</remarks>
+</member>
+<member name="P:UserControls.ucStudentToolbar.btnExit">
+ <summary>
+ Gets A Button Control For Exiting A Form Or Application.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.Close">
+ <summary>
+ Closes The Application.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:UserControls.ucStudentToolbar.ChangesCommitted">
+ <summary>
+ Checks If The DataSet Has Changes And Offers To Save Them.
+ </summary>
+ <returns>True If The DataSet Has No Changes, False Otherwise.</returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

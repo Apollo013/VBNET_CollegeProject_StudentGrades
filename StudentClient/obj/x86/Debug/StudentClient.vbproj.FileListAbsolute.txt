@@ -1,0 +1,44 @@
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\StudentClient.exe.config
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\Resources.resources
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\ResGen.read.1.tlog
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\ResGen.write.1.tlog
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\Data\Students.accdb
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\StudentClient.exe
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\StudentClient.pdb
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\StudentClient.xml
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\StudentClient.exe
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\StudentClient.xml
+C:\Courses\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\StudentClient.pdb
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\StudentClient.exe.config
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\StudentClient.exe
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\StudentClient.xml
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\StudentClient.pdb
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\Data\Students.accdb
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\StudentClient.exe
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\StudentClient.pdb
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\bin\Debug\StudentClient.xml
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\Resources.resources
+C:\Courses\OFI\OFI - VISUAL BASIC\Assignments\8NSS_Assignment_02\StudentClient\obj\x86\Debug\StudentClient.vbproj.GenerateResource.Cache
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\bin\Debug\StudentClient.exe.config
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\obj\x86\Debug\StudentClient.exe
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\obj\x86\Debug\StudentClient.xml
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\obj\x86\Debug\StudentClient.pdb
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\bin\Debug\Data\Students.accdb
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\bin\Debug\StudentClient.exe
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\bin\Debug\StudentClient.pdb
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\bin\Debug\StudentClient.xml
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\obj\x86\Debug\StudentClient.vbprojResolveAssemblyReference.cache
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\obj\x86\Debug\Resources.resources
+C:\Users\Apollo\Documents\GitHub\StudentGrades\StudentClient\obj\x86\Debug\StudentClient.vbproj.GenerateResource.Cache
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\bin\Debug\StudentClient.exe.config
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\obj\x86\Debug\StudentClient.exe
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\obj\x86\Debug\StudentClient.xml
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\obj\x86\Debug\StudentClient.pdb
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\bin\Debug\Data\Students.accdb
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\bin\Debug\StudentClient.exe
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\bin\Debug\StudentClient.pdb
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\bin\Debug\StudentClient.xml
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\obj\x86\Debug\StudentClient.vbprojResolveAssemblyReference.cache
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\obj\x86\Debug\Resources.resources
+C:\App Devs\College\VBNET\VBNET_CollegeProject_StudentGrades\StudentClient\obj\x86\Debug\StudentClient.vbproj.GenerateResource.Cache
